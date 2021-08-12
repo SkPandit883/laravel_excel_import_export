@@ -20,3 +20,4 @@ Route::get('manage-employee',[EmployeeController::class,'manageEmployee']);
 Route::get('file-import-export', [EmployeeController::class, 'fileImportExport']);
 Route::post('file-import', [EmployeeController::class, 'fileImport'])->name('file-import');
 Route::get('file-export', [EmployeeController::class, 'fileExport'])->name('file-export');
+Route::resource('Employee', EmployeeController::class);
